@@ -1,0 +1,31 @@
+﻿
+
+<h2 class='section-name'>قسم glass</h2>
+<div class='image-grid'>
+</div>
+
+
+<h2 class='section-name'>قسم doors</h2>
+<div class='image-grid'>
+</div>
+
+
+<h2 class='section-name'>قسم windows</h2>
+<div class='image-grid'>
+</div>
+
+
+<h2 class='section-name'>قسم iron</h2>
+<div class='image-grid'>
+</div>
+
+
+<h2 class='section-name'>قسم kitchens</h2>
+<div class='image-grid'>
+</div>
+
+
+<h2 class='section-name'>قسم projects</h2>
+<div class='image-grid'>
+</div>
+

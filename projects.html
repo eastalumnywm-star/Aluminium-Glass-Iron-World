@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>مشاريعنا | عالم الألمنيوم والزجاج والحديد</title>
+    <meta name="description" content="معرض مشاريع عالم الألمنيوم والزجاج والحديد بالشرقية: نماذج من أعمالنا في الأبواب والشبابيك والزجاج والحديد.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://eastalumnywm-star.github.io/east-alum/projects.html">
+
+    <meta property="og:title" content="مشاريعنا | عالم الألمنيوم والزجاج والحديد">
+    <meta property="og:description" content="نماذج من أعمالنا في الشرقية: شبابيك، أبواب، زجاج، حديد.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eastalumnywm-star.github.io/east-alum/projects.html">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:image" content="https://eastalumnywm-star.github.io/east-alum/images/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مشاريعنا | عالم الألمنيوم والزجاج والحديد">
+    <meta name="twitter:description" content="نماذج من أعمالنا في الشرقية: شبابيك، أبواب، زجاج، حديد.">
+    <meta name="twitter:image" content="https://eastalumnywm-star.github.io/east-alum/images/og.svg">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#003366">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --main: #003366; --accent: #ffcc00; }
+        body { font-family: 'Cairo', system-ui, sans-serif; margin: 0; background: #f4f7f9; text-align: center; color: #1f2937; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+        nav { background: var(--main); padding: 15px; border-bottom: 3px solid var(--accent); display: flex; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 5px 15px; text-decoration: none; font-weight: bold; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 20px; padding: clamp(12px, 3vw, 20px); max-width: 1200px; margin: auto; }
+        .gallery img { width: 100%; aspect-ratio: 4/3; height: auto; object-fit: cover; border-radius: 15px; border: 3px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.2); content-visibility: auto; contain-intrinsic-size: 350px 262px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="windows.html">الشبابيك</a>
+        <a href="doors.html">الأبواب</a>
+        <a href="projects.html" style="color:var(--accent)">المشاريع</a>
+        <a href="reviews.html">الآراء</a>
+    </nav>
+    <h1 style="color: var(--main); margin-top: 30px;">سجل مشاريعنا المميزة</h1>
+    <div class="gallery" id="proj-gal"></div>
+    <script>
+        const gal = document.getElementById('proj-gal');
+        for(let i=1; i<=10; i++){
+            let img = document.createElement('img');
+            img.src = 'images/p' + i + '.JPG'; // ابحث عن p1.JPG, p2.JPG...
+            img.loading = 'lazy';
+            img.decoding = 'async';
+            img.alt = `مشروع - صورة ${i}`;
+            img.onerror = function(){this.style.display='none'};
+            gal.appendChild(img);
+        }
+    </script>
+</body>
+</html>

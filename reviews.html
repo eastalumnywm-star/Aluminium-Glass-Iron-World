@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>آراء العملاء | عالم الألمنيوم والزجاج والحديد</title>
+    <meta name="description" content="آراء وتقييمات عملاء عالم الألمنيوم والزجاج والحديد بالشرقية: صور وتجارب العملاء مع جودة التنفيذ والدقة.">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://eastalumnywm-star.github.io/east-alum/reviews.html">
+
+    <meta property="og:title" content="آراء العملاء | عالم الألمنيوم والزجاج والحديد">
+    <meta property="og:description" content="تقييمات وتجارب عملائنا في الدمام والخبر وسيهات والقطيف.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eastalumnywm-star.github.io/east-alum/reviews.html">
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:image" content="https://eastalumnywm-star.github.io/east-alum/images/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="آراء العملاء | عالم الألمنيوم والزجاج والحديد">
+    <meta name="twitter:description" content="تقييمات وتجارب عملائنا في الدمام والخبر وسيهات والقطيف.">
+    <meta name="twitter:image" content="https://eastalumnywm-star.github.io/east-alum/images/og.svg">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#003366">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --main: #003366; --accent: #ffcc00; }
+        body { font-family: 'Cairo', system-ui, sans-serif; margin: 0; background: #fff; text-align: center; color: #1f2937; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+        nav { background: var(--main); padding: 15px; border-bottom: 3px solid var(--accent); display: flex; justify-content: center; flex-wrap: wrap; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; margin: 5px 15px; text-decoration: none; font-weight: bold; }
+        .review-card { background: #f9f9f9; border-right: 5px solid var(--accent); padding: 20px; margin: 20px auto; max-width: 600px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .review-img { width: 100%; border-radius: 8px; margin-top: 10px; content-visibility: auto; contain-intrinsic-size: 600px 450px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="windows.html">الشبابيك</a>
+        <a href="doors.html">الأبواب</a>
+        <a href="projects.html">المشاريع</a>
+        <a href="reviews.html" style="color:var(--accent)">الآراء</a>
+    </nav>
+    <h1 style="color: var(--main); margin-top: 30px;">ماذا يقول عملاؤنا عنا؟</h1>
+    <div id="reviews-container"></div>
+
+    <script>
+        const container = document.getElementById('reviews-container');
+        for(let i=1; i<=10; i++){
+            let div = document.createElement('div');
+            div.className = 'review-card';
+            div.innerHTML = `<h3>عميل مميز رقم ${i}</h3><img src="images/r${i}.JPG" class="review-img" loading="lazy" decoding="async" alt="رأي عميل" onerror="this.parentElement.style.display='none'">`;
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>
