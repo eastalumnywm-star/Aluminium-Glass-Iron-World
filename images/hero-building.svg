@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="720" viewBox="0 0 900 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.60"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a7d8ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0b5fa5" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a2a6c"/>
+      <stop offset="1" stop-color="#b21f1f"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect x="40" y="40" width="820" height="640" rx="48" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <path d="M240 610V190c0-18 8-28 22-33l190-70c18-7 34 5 34 24v499H240z" fill="#e9eef7"/>
+    <path d="M486 610V170c0-14 6-23 18-28l170-60c18-6 34 6 34 24v504H486z" fill="#f1f4fb"/>
+
+    <!-- Frames -->
+    <rect x="260" y="220" width="200" height="330" rx="18" fill="url(#frame)" opacity="0.95"/>
+    <rect x="506" y="240" width="176" height="310" rx="18" fill="url(#frame)" opacity="0.92"/>
+
+    <!-- Glass panes -->
+    <g opacity="0.95">
+      <rect x="276" y="236" width="78" height="92" rx="10" fill="url(#glass)"/>
+      <rect x="366" y="236" width="78" height="92" rx="10" fill="url(#glass)"/>
+      <rect x="276" y="340" width="78" height="92" rx="10" fill="url(#glass)"/>
+      <rect x="366" y="340" width="78" height="92" rx="10" fill="url(#glass)"/>
+      <rect x="276" y="444" width="78" height="92" rx="10" fill="url(#glass)"/>
+      <rect x="366" y="444" width="78" height="92" rx="10" fill="url(#glass)"/>
+
+      <rect x="522" y="256" width="68" height="88" rx="10" fill="url(#glass)"/>
+      <rect x="606" y="256" width="60" height="88" rx="10" fill="url(#glass)"/>
+      <rect x="522" y="356" width="68" height="88" rx="10" fill="url(#glass)"/>
+      <rect x="606" y="356" width="60" height="88" rx="10" fill="url(#glass)"/>
+      <rect x="522" y="456" width="68" height="88" rx="10" fill="url(#glass)"/>
+      <rect x="606" y="456" width="60" height="88" rx="10" fill="url(#glass)"/>
+    </g>
+  </g>
+
+  <!-- Accent lines (trust/quality vibe) -->
+  <path d="M130 610h640" stroke="#1a2a6c" stroke-opacity="0.22" stroke-width="10" stroke-linecap="round"/>
+  <path d="M170 640h560" stroke="#fdbb2d" stroke-opacity="0.42" stroke-width="10" stroke-linecap="round"/>
+  <path d="M210 670h480" stroke="#b21f1f" stroke-opacity="0.20" stroke-width="10" stroke-linecap="round"/>
+</svg>
